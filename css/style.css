@@ -1,0 +1,309 @@
+:root {
+
+    --main-color: #09131e;
+    --section-padding:60px;
+    --header-color: #173b6c;
+    --sec-color:rgb(65, 145, 236);
+}
+
+body{
+
+    display:flex;
+    flex-direction: column;
+    font-family: "Raleway", sans-serif;
+    margin:0;
+}
+
+/*.nav start*/
+
+.nav {
+    width: 20%;
+    margin: 0;
+    background-color: #09131e;
+    color:white;
+    height:100%;
+    position: fixed;
+}
+
+.nav .picture {
+
+    padding-top: 25px;
+}
+.nav .picture img {
+
+    margin-left: auto;
+    border: 5px #253749 solid;
+    border-radius: 50%;
+    margin-right: auto;
+    display: block;
+
+}
+
+
+.social{
+
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: center;
+}
+.social i {
+    
+    font-size: 25px;
+
+}
+
+.social a {
+
+    color:#777;
+
+}
+
+.social a:hover i{
+
+    font-size: 27px;
+
+}
+.social a:not(:last-child) {
+
+        margin-right:10px;
+}
+
+.nav .nav-list ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:15px;
+    margin:0;
+}
+
+.nav-list ul>li:not(:first-child) {
+
+        margin-top: 25px;
+}
+
+.nav-list ul>li:first-child{
+
+    margin-top: 25px;
+
+}
+
+.nav .nav-list a {
+    border: 1px;
+    text-decoration: none;
+    color: #777;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.nav .nav-list a:hover {
+
+    margin-left:20px;
+    color:white;
+
+}
+
+.nav .nav-list a:hover i {
+
+    color:var(--sec-color);
+}
+
+
+
+.nav .nav-list i:hover .text {
+
+    color:var(--sec-color)
+
+}
+
+
+.nav-list a i{
+
+    color:#495057;
+    margin-right: 10px;
+
+}
+/* .nav end*/
+
+/* Home start */ 
+
+
+
+.home {
+
+    background-image: url(/img/bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width:100%;
+
+}
+.home .intro {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    color:White;
+    font-size:30px;}
+
+.home .intro h3 {
+    margin-bottom: 10px;
+}
+
+.home .intro p {
+
+    margin:0;
+
+}
+
+.home .intro p span {
+
+    border-bottom: 3px solid rgb(58, 209, 255);
+    width: fit-content;
+}
+/*Home End*/
+
+/* About Start */
+
+
+
+
+.about {
+
+    padding-bottom: var(--section-padding);
+
+
+}
+
+.about .container {
+
+    width: calc(100% - 21%);
+    position: absolute;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-left:15px;
+}
+
+
+.about .container .about-info{
+
+
+    height: fit-content;
+    width: 90%;
+
+
+}
+
+.about-info h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    border-bottom: 4px rgb(58, 209, 255) solid;
+    width:5%;
+}
+
+.container .job {
+
+    padding-left: 30px;
+    width: 65%;
+
+}
+
+.container .job h3 {
+
+    margin-top:0;
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+
+}
+
+.container .job p:first-of-type {
+
+    font-style: italic;
+
+}
+
+.container .job p:last-of-type {
+
+    margin-bottom: 0;
+}
+
+.container .job .ul {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+ul {
+    list-style: none;
+    padding-left:0;
+    padding-right: 150px;    
+}
+
+ul>li {
+
+    width: 100%;
+
+}
+
+ul li span {
+
+    font-weight: 600;
+}
+
+
+ul>li:not(:last-child){
+
+    padding-bottom: 20px;
+    
+
+}
+
+ul li i {
+
+    margin-right: 10px;
+    font-size:20px;
+    color:rgb(65, 145, 236);
+
+}
+.container .job-info {
+
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    margin-bottom: 85px;
+}
+
+
+/* About End*/
+/* Facts Start*/
+
+.facts-info h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+    border-bottom: 4px rgb(58, 209, 255) solid;
+    width:5%;
+}
+
+.about .container .facts-info{
+
+
+    height: fit-content;
+    width: 87%;
+
+
+}
+
+
+/* Facts End */
